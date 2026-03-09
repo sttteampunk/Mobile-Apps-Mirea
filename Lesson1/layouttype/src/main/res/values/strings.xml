@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Layout Type</string>
+    <string name="greeting">おはよう</string>
+    <string name="description_of_the_image">A beautiful girl</string>
+</resources>
