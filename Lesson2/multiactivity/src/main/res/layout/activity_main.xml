@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/material_dynamic_neutral20"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/editTextInput"
+            android:layout_width="match_parent"
+            android:layout_height="231dp"
+            android:layout_marginBottom="16dp"
+            android:backgroundTint="@color/white"
+            android:background="#EEEEEE"
+            android:gravity="top|start"
+            android:hint="Введите текст сообщения..."
+            android:inputType="textMultiLine"
+            android:minLines="3"
+            android:outlineAmbientShadowColor="@color/white"
+            android:textColor="@color/black"
+            android:textColorHint="@color/material_dynamic_neutral70" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onSendMail"
+            android:text="Отправить письмо (Intent + Toast)" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onShareData"
+            android:text="Переслать (Implicit Intent Share)" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onOpenBrowser"
+            android:text="Портал МИРЭА (Implicit Intent Web)" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickSendNotification"
+            android:text="Входящие (Notification)" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickShowDialog"
+            android:text="Сохранить черновик? (AlertDialog)" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickShowDateDialog"
+                android:text="Дата" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:onClick="onClickShowTimeDialog"
+                android:text="Время" />
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickShowProgressDialog"
+            android:text="Прикрепить файл (ProgressDialog)" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="onClickShowSnackbar"
+            android:text="Удалить черновик (Snackbar)" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
