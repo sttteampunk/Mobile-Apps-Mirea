@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/windows_wp"
+    android:orientation="vertical"
+    android:padding="8dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card_bg_selector"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/card_stroke_selector"
+        app:strokeWidth="1dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="┌[Lenovo]\n└[~]\n> Ricing --man" android:textColor="#E5E7EB"
+                android:fontFamily="@font/jetbrains_mono" android:textSize="14sp" android:layout_marginBottom="8dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:text="Ricing (Райсинг) — это процесс глубокой кастомизации и визуального оформления рабочего стола в ОС Linux (или Windows) для достижения уникального, эстетичного внешнего вида. Это включает смену тем, иконок, настройку оконных менеджеров (тайлинг), прозрачности, шрифтов и терминалов. Основная цель — сделать интерфейс красивым и удобным, часто без реального прироста производительности"
+                android:textColor="#A0A1A4" android:fontFamily="@font/jetbrains_mono" android:textSize="10sp" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card_bg_selector"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/card_stroke_selector"
+        app:strokeWidth="1dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="┌[Lenovo]\n└[~/config]\n> komorebic --help | starship --man"
+                android:textColor="#E5E7EB" android:fontFamily="@font/jetbrains_mono" android:textSize="14sp" android:layout_marginBottom="8dp"/>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Komorebic — это плиточный оконный менеджер для Windows. Я использую его для строгой сеточной организации рабочего процесса, управляемого с клавиатуры. В моей конфигурации полностью убраны границы окон и заголовки. Starship — настроен с использованием чисто серой цветовой палитры. Starship обеспечивает минималистичное и быстрое приглашение командной строки."
+                android:textColor="#A0A1A4" android:fontFamily="@font/jetbrains_mono" android:textSize="10sp" android:lineSpacingExtra="4dp"/>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card3"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardBackgroundColor="@color/card_bg_selector"
+        app:cardCornerRadius="0dp"
+        app:cardElevation="0dp"
+        app:strokeColor="@color/card_stroke_selector"
+        app:strokeWidth="1dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:padding="12dp">
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="┌[Lenovo]\n└[~/config]\n> winfetch " android:textColor="#E5E7EB" android:fontFamily="@font/jetbrains_mono" android:textSize="14sp" />
+            <TextView android:id="@+id/spinText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="bottom" android:text="|" android:textColor="#E5E7EB" android:fontFamily="@font/jetbrains_mono" android:textSize="14sp" />
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>
